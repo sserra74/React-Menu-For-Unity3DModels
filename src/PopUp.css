@@ -1,0 +1,128 @@
+
+
+.popUp {
+    position: fixed;
+    top:21%;
+    left: 22%;
+    width:54.6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    z-index: 10000  !important;
+   zoom:100%;
+   height: 50vh  !important;
+   border-radius: 5px;;
+   box-shadow: 1px 1px 3px 8px #b3b3b3;
+  
+  }
+
+  
+  .popup-left
+  {
+      width:50%;
+  }
+.popup-right
+{
+    width:20%;
+}
+.vl {
+    border-left: 2px solid grey;
+    height:50vh;
+    right: 0%;
+  }
+.popup
+{
+
+}
+
+button {
+  width: 150px;
+  
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+
+
+.popup-right >h2{
+  color:rgb(97, 97, 97);
+  padding-left: 50%;;
+}
+
+#bottoni{
+ 
+  display:flex;
+  flex-direction: column;
+  padding-top:70%;
+  padding-left: 10%;
+  bottom:0;
+  right:0;
+}
+
+#category{
+  background-color: #22ac7c;
+}
+
+#category:hover{
+  background-color: #29BB89;
+}
+#bottoni>button{
+  width: 20rem;
+
+}
+
+
+/*index.css*/
+#buttonC
+{
+  background-color: #60b2e5;
+}
+#buttonCloseC
+{
+  background-color: rgb(97, 97, 97);
+}
+
+#buttonCloseC:hover
+{
+  background-color: #60b2e5;
+}
+
+#buttonC:hover
+{
+  background-color: #5995fd;
+}
+
+#buttonO
+{
+  background-color: #29BB89;
+}
+#buttonCloseO
+{
+  background-color: rgb(97, 97, 97);
+}
+
+#buttonCloseO:hover
+{
+  background-color: #29BB89;
+}
+
+#buttonO:hover
+{
+  background-color: #22ac7c;
+}
+
+
+
+#bar{
+  left:30%;
+  top:43%;
+  position: absolute;
+}

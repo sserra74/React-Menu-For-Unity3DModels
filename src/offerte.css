@@ -1,0 +1,353 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  .gameObjects {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2.5rem 33.4rem;
+    position: relative;
+    z-index: 0;
+    
+  }
+  
+  .gameObjectCharacter {
+    clear: left;
+    display: block;
+    margin: 0.4rem 2rem;
+    width: 12.5rem; /*width*/
+    height: 18.75rem;
+    justify-content: space-around;
+    border-radius: 0.3125rem;
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.1);
+    background-color: #f6f6f6f6;
+    overflow: hidden;
+    position: relative;
+    cursor:pointer;
+  }
+  
+  .gameObjectCharacter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #60b2e5;
+    clip-path: circle(7.375rem at 80% 20%);
+    transition: 0.5s ease-in-out;
+    cursor:pointer;
+  }
+  
+  .gameObjectCharacter:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #60b2e5;
+    clip-path: circle(14.75rem at 80% -20%);
+    transition: 0.5s ease-in-out;
+  }
+
+  .gameObjectObject {
+    clear: left;
+    display: block;
+    margin: 0.4rem 2rem;
+    width: 12.5rem; /*width*/
+    height: 18.75rem;
+    justify-content: space-around;
+    border-radius: 0.3125rem;
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.1);
+    background-color: #f6f6f6f6;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gameObjectObject::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #29BB89;
+    clip-path: circle(7.375rem at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .gameObjectObject:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #29BB89;
+    clip-path: circle(14.75rem at 80% -20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+  /*.product:after {
+  
+    content: "Offerta";
+    position: absolute;
+    top: 50%;
+    left:-13%;
+    font-size: 4.2em;
+    font-style: italic;
+    color: rgba(175, 175, 175, 0.4);
+    
+    
+    }
+  
+    .product:after {
+  
+      content: "Offerta";
+      margin: 0;
+      position: absolute;
+      left:10%;
+      font-size: 3.0em;
+      font-style: italic;
+     color: white;
+    
+      }*/
+  
+  .gameObjectContent {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -10%;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .gameObjectCharacter:hover .gameObjectContent {
+    height: 130px;
+    transform: translateY(-3%);
+  }
+
+  .gameObjectObject:hover .gameObjectContent {
+    height: 130px;
+    transform: translateY(-3%);
+  }
+  
+  .gameObjectContent h2 {
+    position: relative;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    color: #3d3d3e;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+  }
+  .gameObjectContent .animato {
+    display: flex;
+    margin-top: 1.8rem;
+  }
+  .gameObjectContent .animato h3 {
+    margin: -0.8rem 4rem;
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #3d3d3e;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+  }
+  
+  .gameObjectContent .animato span {
+    margin: -0.78rem -3.9rem;
+  
+    font-weight: 340;
+    letter-spacing: 0.4px;
+  
+    color: #3d3d3e;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+  }
+  button {
+    width: 150px;
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .link button {
+    height: 2rem;
+    margin-top: 1.6rem;
+    background-color: #60b2e5;
+    border-color: none;
+    border-radius: 4px;
+    display: inline-block;
+  
+    font-size: 0.8em;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .gameObjectContent h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #3d3d3e;
+  }
+  
+  .imgBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .gameObjectCharacter:hover .imgBox {
+    top: 0;
+    transform: translateY(0%);
+  }
+
+  .gameObjectObject:hover .imgBox {
+    top: 0;
+    transform: translateY(0%);
+  }
+  
+  .imgBox img {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg) rotateZ(0deg);
+    width: 20rem;
+  }
+  
+  .content p {
+    font-family: calibri;
+    text-align: center;
+    color: #3d3d3e;
+  }
+ .swiper-container
+ {
+   margin-left: 7% !important;
+   z-index: 0;
+ }
+ 
+  .swiper-slide {
+    width:1770px;
+    height: 705.562px!important;;
+    display: inline-block;
+    font-size: 18px;
+  }
+  .swiper-button-next,
+  .swiper-container-rtl .swiper-button-prev {
+    right: 21% !important;
+    left:auto;
+    top:47% !important;
+  }
+  .swiper-button-prev,
+  .swiper-container-rtl .swiper-button-next {
+    left: 13% !important;
+    right: auto;
+    top:47% !important;
+  }
+
+
+  
+  
+  .gameObjectCategoryClicked0{
+   
+    clear: left;
+    display: block;
+    margin: 0.4rem 2rem;
+    width: 18.0rem; /*width*/
+    height: 18.75rem;
+    justify-content: space-around;
+    border-radius: 0.3125rem;
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.1);
+    background-color: #60b2e5;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .gameObjectCategoryClicked1{
+   
+    clear: left;
+    display: block;
+    margin: 0.4rem 2rem;
+    width: 18.0rem; /*width*/
+    height: 18.75rem;
+    justify-content: space-around;
+    border-radius: 0.3125rem;
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.1);
+    background-color: #29BB89;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .gameObjectCategory {
+    clear: left;
+    display: block;
+    margin: 0.4rem 2rem;
+    width: 18.0rem; /*width*/
+    height: 18.75rem;
+    justify-content: space-around;
+    border-radius: 0.3125rem;
+    box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .gameObjectCategoryContent {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top:70%;
+    left:0.4%;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .gameObjectCategoryContent>h2 {
+    color:black;
+  }
+
+  #h2{
+    color:white;
+  }
+  #h2_2{
+    color:white;
+    margin-top: 2rem;;
+    margin-left:-1rem;
+  }
+
+  #img{
+    margin-left:20%;
+    margin-top:10%;
+  
+  }
+  #img>img{
+    width:75%;
+    height: 70%;
+   
+  }
+
+  #objectImage
+  {
+    margin-left:1.4rem;
+  }
+
+ 
+  
+  
+  
